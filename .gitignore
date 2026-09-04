@@ -1,0 +1,38 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / React (Frontend)
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.npm
+frontend/.eslintcache
+
+# Python / Flask (Backend)
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*/*/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.pytest_cache/
+backend/venv/
+backend/.venv/
+backend/env/
+
+# Database & Logs
+*.log
+database/*.dump
+database/*.sqlite

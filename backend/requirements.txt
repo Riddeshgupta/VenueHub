@@ -1,0 +1,5 @@
+# VenueHub Backend Dependencies (Placeholder)
+# Flask
+# PyMySQL / Flask-SQLAlchemy
+# PyJWT / Flask-JWT-Extended
+# python-dotenv

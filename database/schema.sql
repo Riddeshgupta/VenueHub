@@ -1,0 +1,2 @@
+-- VenueHub Database Schema Placeholder
+-- MySQL database table definitions (users, venues, quotations, bookings, reviews) will be defined here.
