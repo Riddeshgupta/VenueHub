@@ -1,0 +1,269 @@
+/* My Bookings Page Styles */
+.my-bookings-page {
+  padding: 2.5rem 0 5rem;
+  min-height: calc(100vh - 160px);
+}
+
+/* Upcoming Bookings Section */
+.upcoming-section {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(16, 185, 129, 0.08) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+.upcoming-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.upcoming-card-item {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.upcoming-card-item:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.ucard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ucard-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+.ucard-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ucard-location {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.ucard-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.umeta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.umeta-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.umeta-val {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.ucard-footer {
+  margin-top: 0.4rem;
+}
+
+/* Booking Full Cards Stack */
+.booking-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-full-card {
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--border-color);
+}
+
+.booking-full-card:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bcard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.bcard-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bcard-icon {
+  font-size: 2.2rem;
+}
+
+.bcard-venue-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.bcard-location {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+  display: block;
+}
+
+.bcard-status-box {
+  display: flex;
+  align-items: center;
+}
+
+.bcard-body-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  background: rgba(15, 23, 42, 0.4);
+  padding: 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.bspec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.bspec-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.bspec-val {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.bcard-footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.review-submitted-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* Star Rating Picker */
+.star-rating-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.star-btn {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  padding: 0 0.15rem;
+  transition: all var(--transition-fast);
+}
+
+.star-btn:hover,
+.star-btn.selected {
+  color: #f59e0b;
+  transform: scale(1.15);
+}
+
+.rating-num-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-left: 0.6rem;
+}
+
+.review-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .upcoming-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bcard-body-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .bcard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .bcard-body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bcard-footer-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bcard-footer-actions button {
+    width: 100%;
+  }
+
+  .ucard-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}

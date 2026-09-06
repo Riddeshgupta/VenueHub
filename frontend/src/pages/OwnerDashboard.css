@@ -1,0 +1,122 @@
+/* Venue Owner Dashboard Styles */
+.owner-dashboard-page {
+  padding: 2.5rem 0 5rem;
+  min-height: calc(100vh - 160px);
+}
+
+.owner-welcome-card {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.18) 0%, rgba(99, 102, 241, 0.12) 100%);
+}
+
+.owner-avatar {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
+}
+
+.owner-role-badge {
+  color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.15) !important;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.toast-info {
+  background: rgba(56, 189, 248, 0.95);
+  color: #ffffff;
+  border: 1px solid rgba(125, 211, 252, 0.5);
+}
+
+/* Owner Venues Grid */
+.owner-venues-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.owner-venue-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.owner-venue-card:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.ov-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.ov-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ov-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.ov-location {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.ov-specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  background: rgba(15, 23, 42, 0.4);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.ovspec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ovspec-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.ovspec-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.ov-footer {
+  margin-top: 0.3rem;
+}
+
+/* Responsive Rules */
+@media (max-width: 900px) {
+  .owner-venues-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .ov-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ov-specs {
+    grid-template-columns: 1fr;
+  }
+}

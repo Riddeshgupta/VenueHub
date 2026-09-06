@@ -1,0 +1,245 @@
+/* Owner Venues Page Styles */
+.owner-venues-page {
+  padding: 2.5rem 0 5rem;
+  min-height: calc(100vh - 160px);
+}
+
+.owner-header-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.btn-add-venue {
+  padding: 0.8rem 1.4rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.owner-venues-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.owner-venue-full-card {
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--border-color);
+}
+
+.owner-venue-full-card:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ovcard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.ovcard-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ovcard-icon {
+  font-size: 2.2rem;
+}
+
+.ovcard-venue-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ovcard-location {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+  display: block;
+}
+
+.ovcard-status-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ovcard-description {
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid #10b981;
+  padding: 0.85rem 1.2rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+
+}
+
+.ovcard-description p {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  margin: 0 0 0.3rem 0;
+  line-height: 1.5;
+}
+
+.ovcard-address {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.ovcard-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  background: rgba(15, 23, 42, 0.4);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.ovspec-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ovspec-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.ovspec-val {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ovcard-footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.left-actions, .right-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Modal Form Styles */
+.owner-venue-modal {
+  max-width: 760px;
+}
+
+.venue-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.section-subheading {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.checkbox-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  background: rgba(15, 23, 42, 0.5);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.checkbox-item-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-item-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #10b981;
+  cursor: pointer;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .checkbox-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .owner-header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-add-venue {
+    width: 100%;
+  }
+
+  .ovcard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .ovcard-specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ovcard-footer-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .left-actions, .right-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-actions button, .left-actions a, .right-actions button {
+    width: 100%;
+  }
+
+  .form-grid-2, .form-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-options-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,125 @@
+/* My Wishlist Page Styles */
+.my-wishlist-page {
+  padding: 2.5rem 0 5rem;
+  min-height: calc(100vh - 160px);
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.wishlist-card {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.wishlist-card:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.wcard-header {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.85rem;
+}
+
+.wcard-title-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.wcard-icon {
+  font-size: 2rem;
+}
+
+.wcard-venue-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.wcard-location {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+  display: block;
+}
+
+.wcard-body-specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: rgba(15, 23, 42, 0.4);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.wspec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.wspec-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.wspec-val {
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.wcard-footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.wcard-footer-actions button {
+  flex: 1;
+}
+
+.btn-remove-wishlist {
+  color: #fca5a5 !important;
+  border-color: rgba(239, 68, 68, 0.4) !important;
+  background: rgba(239, 68, 68, 0.1) !important;
+}
+
+.btn-remove-wishlist:hover {
+  background: rgba(239, 68, 68, 0.25) !important;
+  border-color: rgba(239, 68, 68, 0.6) !important;
+}
+
+/* Responsive Rules */
+@media (max-width: 900px) {
+  .wishlist-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .wcard-body-specs {
+    grid-template-columns: 1fr;
+  }
+
+  .wcard-footer-actions {
+    flex-direction: column;
+  }
+
+  .wcard-footer-actions button {
+    width: 100%;
+  }
+}

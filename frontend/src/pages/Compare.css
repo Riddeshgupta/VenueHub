@@ -1,0 +1,286 @@
+/* Compare Venues Page Styles */
+.compare-page {
+  padding: 2.5rem 0 5rem;
+  min-height: calc(100vh - 160px);
+}
+
+/* Empty State Card */
+.empty-compare-card {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 580px;
+  margin: 2rem auto 0;
+}
+
+.empty-compare-icon {
+  font-size: 3.5rem;
+  opacity: 0.85;
+}
+
+.empty-compare-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.empty-compare-text {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Date Availability Bar */
+.compare-date-bar {
+  padding: 1.25rem 1.75rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.date-bar-label {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+.date-bar-input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-bar-input {
+  max-width: 220px;
+}
+
+.checking-spinner {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Side-by-Side Comparison Table */
+.compare-table-wrapper {
+  overflow-x: auto;
+  padding: 0;
+
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.compare-table th, .compare-table td {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+/* Column Width Headers */
+.feature-col-header {
+  width: 220px;
+  min-width: 200px;
+  background: rgba(15, 23, 42, 0.6);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.venue-col-header {
+  width: 320px;
+  min-width: 280px;
+  background: rgba(15, 23, 42, 0.4);
+
+}
+
+/* Venue Card Header inside Table */
+.venue-header-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.venue-header-badge {
+  font-size: 2.2rem;
+}
+
+.compare-venue-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+
+}
+
+.compare-venue-city {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.compare-venue-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.btn-sm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* Section Header Rows */
+.section-row td {
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--primary);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.9rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.feature-label {
+  font-weight: 600;
+  color: var(--text-main);
+  background: rgba(15, 23, 42, 0.3);
+  font-size: 0.95rem;
+}
+
+.highlight-cell {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.price-cell-large {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.desc-cell {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 320px;
+}
+
+/* Tags & Badges */
+.compare-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.compare-tag {
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 500;
+
+}
+
+.compare-fac-tag {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+}
+
+.itemized-price-line {
+  margin-bottom: 0.3rem;
+  font-size: 0.92rem;
+}
+
+.item-line-name {
+  color: var(--text-muted);
+}
+
+.item-line-val {
+  color: #38bdf8;
+}
+
+.opt-subbadge {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.rating-star-val {
+  font-weight: 700;
+  color: #f59e0b;
+  font-size: 1.05rem;
+}
+
+.text-muted {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+
+}
+
+.date-subtag {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-top: 0.1rem;
+}
+
+.avail-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.status-available {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.status-booked {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.status-blocked {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .compare-date-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .date-bar-input-group {
+    width: 100%;
+  }
+
+  .date-bar-input {
+    max-width: 100%;
+    width: 100%;
+  }
+}

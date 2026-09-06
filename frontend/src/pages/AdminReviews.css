@@ -1,0 +1,23 @@
+.star-rating-display {
+  color: #fbbf24;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.comment-preview-text {
+  max-width: 250px;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.review-comment-full-box {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 10px;
+  color: #f1f5f9;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 6px;
+  white-space: pre-wrap;
+}
