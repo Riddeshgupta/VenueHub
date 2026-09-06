@@ -36,3 +36,6 @@ backend/env/
 *.log
 database/*.dump
 database/*.sqlite
+
+# Local database backup
+venuehub_backup.sql
